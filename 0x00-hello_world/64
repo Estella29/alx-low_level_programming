@@ -1,0 +1,7 @@
+6-size.c: In function ‘main’:
+6-size.c:13:75: error: expected ‘;’ before ‘printf’
+   13 |  printf("Size of a long long int: %ld bytes(s)\n", sizeof(long long int*))
+      |                                                                           ^
+      |                                                                           ;
+   14 |  printf("Size of a float:: %ld byte(s)\n", sizeof(float*))
+      |  ~~~~~~                                                                    

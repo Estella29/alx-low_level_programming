@@ -2,18 +2,17 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - prints the alphabet in lowercase, followed by a new line.
+* main - prints all single digit numbers of base 10.
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-	int i;
-	while (i < 10)
-	{
-		putchar(i);
-		i++;
-	}
+	int d;
+
+	for (d = '0'; d <= '9'; d++)
+		putchar(d);
 	putchar('\n');
+
 	return (0);
 }
 

@@ -2,7 +2,6 @@
 
 /**
  * print_numbers - prints the numbers, from 0 to 9.
- *@i: number to be printed
  *
  * Return: void
  */

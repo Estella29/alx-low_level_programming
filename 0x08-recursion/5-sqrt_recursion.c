@@ -9,19 +9,19 @@
 
 int sqrt2(int n, int m)
 {
-	if (m * m  == n)
+	if (m % (n / m)  == 0)
 	{
-		return (m);
-
-	if (m * m  > n)
-
-		return (-1);
+	if (m * (n / m) ==  n)
+	return (m);
+	else
+	return (-1);
 	}
-	return (sqrt2(n, m + 1));
+	return (0 + sqrt2(n, m + 1));
 }
 
 /**
- * _sqrt_recursion -  returns the natural square root of a number.
+ * _sqrt_recursion - checks and  returns the
+ * natural square root of a number.
  *
  * @n: number to be checked
  *
@@ -29,5 +29,11 @@ int sqrt2(int n, int m)
  */
 int _sqrt_recursion(int n)
 {
-	return (sqrt2(n, 1));
+	if (n < 0)
+		return (-1);
+	if (n == 0)
+		return (0);
+	if (n == 1)
+		return (1);
+	return (sqrt2(n, 2));
 }

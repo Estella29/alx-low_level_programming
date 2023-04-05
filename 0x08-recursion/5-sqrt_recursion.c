@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt - returns the natural square root of a number.
+ * sqrt2 - returns the natural square root of a number.
  * @n: number to check
  * @m: number to iterate
  * Return: square root

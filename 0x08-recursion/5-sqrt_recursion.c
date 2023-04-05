@@ -9,14 +9,15 @@
 
 int sqrt2(int n, int m)
 {
-	if (m % (n / m)  == 0)
+	if (m * m  == n)
 	{
-	if (m * (n / m)  == n)
-	return (m);
-	else
+		return (m);
+
+	if (m * m  > n)
+
 		return (-1);
 	}
-	return (0 + sqrt2(n, m + 1));
+	return (sqrt2(n, m + 1));
 }
 
 /**
@@ -28,11 +29,5 @@ int sqrt2(int n, int m)
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
-	if (n == 0)
-		return (0);
-	if (n == 1)
-		return (1);
-        return (sqrt2(n, 2));
+	return (sqrt2(n, 1));
 }

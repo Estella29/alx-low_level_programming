@@ -12,21 +12,21 @@
 
 int main(int argc, char *argv[])
 {
-	int n1, n2, sum = 0;
+	int i, j, add = 0;
 
-	for (n1 = 0; n1 < argc; n1++)
+	for (i = 1; i < argc; i++)
 	{
-		for (n2 = 0; argv[n1][n2] != '\0'; n2++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (!isdigit(argv[n1][n2]))
-			{
-				printf("Error\n");
-				return (1);
-			}
+		if (!isdigit(argv[i][j]))
+		{
+		printf("Error\n");
+		return (1);
 		}
-		sum += atoi(argv[n1]);
+		}
+		add += atoi(argv[i]);
 	}
-	printf("%d\n", sum);
+	printf("%d\n", add);
 	return (0);
 }
 
